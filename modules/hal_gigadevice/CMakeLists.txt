@@ -43,6 +43,8 @@ if(${CONFIG_SOC_SERIES_GD32E50X})
   zephyr_compile_definitions(GD32E50X)
   if (${CONFIG_SOC_GD32E507})
     zephyr_compile_definitions(GD32E50X_CL)
+  elseif(${CONFIG_SOC_GD32E503})
+    zephyr_compile_definitions(GD32E50X_HD)
   endif()
 endif()
 
